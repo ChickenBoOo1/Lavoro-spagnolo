@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Refugio Verde: un hotel ecológico donde disfrutar de la naturaleza, alojamiento sostenible, huerto orgánico y actividades educativas.">
+  <title>Refugio Verde - Hotel Ecológico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Stili generali */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Lora', serif;
+      color: #4CAF50;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #2d6a4f;
+      color: white;
+    }
+
+    header .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Sezione Hero */
+    .hero {
+      background-image: url('nature.jpg');
+      background-attachment: fixed; /* Effetto parallax */
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 2s forwards;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    /* Sezione Habitaciones */
+    #habitaciones {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .habitacion {
+      margin-bottom: 20px;
+    }
+
+    .habitacion h3 {
+      font-size: 2em;
+    }
+
+    /* Sezione Servicios */
+    #servicios {
+      padding: 40px 20px;
+      background-color: #e8f5e9;
+    }
+
+    .servicio {
+      margin-bottom: 20px;
+    }
+
+    /* Sezione Reserva */
+    #reserva {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    #reserva .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Sezione Blog */
+    #blog {
+      padding: 40px 20px;
+      background-color: #e8f5e9;
+    }
+
+    #blog article {
+      margin-bottom: 20px;
+    }
+
+    /* Sezione FAQ */
+    #faq {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+    }
+
+    /* Sezione Testimonianze */
+    #testimonianze {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .testimonianza {
+      margin-bottom: 20px;
+    }
+
+    .testimonianza p {
+      font-style: italic;
+    }
+
+    /* Sezione Galleria */
+    #galleria {
+      padding: 40px 20px;
+      background-color: #e8f5e9;
+    }
+
+    .galleria img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+
+    /* Sezione Contatti */
+    #contatti {
+      padding: 40px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    /* Sezione Sostenibilità */
+    #sostenibilidad {
+      padding: 40px 20px;
+      background-color: #e8f5e9;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2d6a4f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Responsività */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sezione di navigazione -->
+  <header>
+    <div class="logo">
+      <img src="foto/logo.jpg" alt="Logo Refugio Verde">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reserva">Reserva</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#testimonianze">Testimonianze</a></li>
+        <li><a href="#galleria">Galleria</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#sostenibilidad">Sostenibilità</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sezione Inicio -->
+  <section id="home" class="hero">
+    <h1>Bienvenido a Refugio Verde</h1>
+    <p>Un hotel ecológico rodeado de naturaleza. Vive una experiencia única y sostenible.</p>
+    <a href="#reserva" class="button">Reserva tu experiencia verde</a>
+  </section>
+
+  <!-- Sezione Habitaciones -->
+  <section id="habitaciones">
+    <h2>Habitaciones Ecológicas</h2>
+    <div class="habitacion">
+      <h3>Cabañas Ecológicas</h3>
+      <p>Construidas con materiales sostenibles y equipadas con energía solar.</p>
+    </div>
+    <div class="habitacion">
+      <h3>Suites con Energía Solar</h3>
+      <p>Habitaciones lujosas con vista panorámica y energía 100% solar.</p>
+    </div>
+  </section>
+
+  <!-- Sezione Servicios -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio">
+      <h3>Huerto Orgánico</h3>
+      <p>Disfruta de alimentos frescos cultivados en nuestro propio huerto.</p>
+    </div>
+    <div class="servicio">
+      <h3>Talleres de Reciclaje</h3>
+      <p>Participa en talleres educativos sobre sostenibilidad.</p>
+    </div>
+    <div class="servicio">
+      <h3>Excursiones Ecológicas</h3>
+      <p>Explora la flora y fauna local con guías expertos.</p>
+    </div>
+    <div class="servicio">
+      <h3>Área de Meditación</h3>
+      <p>Relájate en un espacio rodeado de naturaleza.</p>
+    </div>
+  </section>
+
+  <!-- Sezione Reserva -->
+  <section id="reserva">
+    <h2>Reserva tu Estancia</h2>
+    <p>Haz tu reserva para vivir una experiencia ecológica única.</p>
+    <a href="reserva.html" class="button">Reserva Ahora</a>
+  </section>
+
+  <!-- Sezione Blog -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <article>
+      <h3>¿Por qué elegir un hotel ecológico para tu próxima escapada?</h3>
+      <p>Los hoteles ecológicos son una excelente opción para reducir tu huella ambiental y conectar con la naturaleza.</p>
+    </article>
+    <article>
+      <h3>5 prácticas sostenibles que puedes aprender durante tu estancia</h3>
+      <p>Descubre cómo pequeños hábitos pueden hacer una gran diferencia en tu vida diaria.</p>
+    </article>
+  </section>
+
+  <!-- Sezione FAQ -->
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-item">
+      <h3>¿Cómo puedo hacer una reserva?</h3>
+      <p>Puedes hacer tu reserva directamente en nuestro sitio web usando la sección de reservas.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿El hotel es pet-friendly?</h3>
+      <p>Sí, aceptamos mascotas en habitaciones específicas. Consulta nuestra política en la sección de reservas.</p>
+    </div>
+  </section>
+
+  <!-- Sezione Testimonianze -->
+  <section id="testimonianze">
+    <h2>Testimonianze</h2>
+    <div class="testimonianza">
+      <p>"Una experiencia maravillosa, me sentí completamente en paz con la naturaleza. El servicio fue excelente!" - Laura P.</p>
+    </div>
+    <div class="testimonianza">
+      <p>"Un lugar perfecto para desconectar. Todo el personal es muy amable y el hotel es espectacular." - Juan M.</p>
+    </div>
+  </section>
+
+  <!-- Sezione Galleria -->
+  <section id="galleria">
+    <h2>Galleria</h2>
+    <div class="galleria">
+      <img src="foto/hotel.jpeg" alt="Vista del hotel">
+      <img src="foto/orto.jpeg" alt="Huerto orgánico">
+    </div>
+  </section>
+
+  <!-- Sezione Contatti -->
+  <section id="contatti">
+    <h2>Contáctanos</h2>
+    <p>Si tienes alguna pregunta o deseas más información, no dudes en ponerte en contacto con nosotros.</p>
+    <a href="mailto:info@refugiovverde.com" class="button">Enviar un Correo</a>
+  </section>
+
+  <!-- Sezione Sostenibilidad -->
+  <section id="sostenibilidad">
+    <h2>Sostenibilidad</h2>
+    <p>En Refugio Verde, trabajamos cada día para reducir nuestro impacto ambiental. Desde el uso de energías renovables hasta la educación sobre reciclaje, nos aseguramos de promover prácticas sostenibles.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Refugio Verde. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
